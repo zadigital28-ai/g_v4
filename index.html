@@ -1153,16 +1153,29 @@
             }
         }
     
+        
         /* Modal & Drawer Background Fix for Readability */
         .modal-content, .cart-drawer {
-            background: rgba(255, 255, 255, 0.85) !important;
-            backdrop-filter: blur(15px) !important;
-            -webkit-backdrop-filter: blur(15px) !important;
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(20px) !important;
+            -webkit-backdrop-filter: blur(20px) !important;
+            color: var(--color-text) !important;
         }
         html.dark .modal-content, html.dark .cart-drawer {
-            background: rgba(15, 23, 42, 0.85) !important;
+            background: rgba(15, 23, 42, 0.95) !important;
         }
         
+        @media (max-width: 900px) {
+            .nav-menu {
+                background: rgba(255, 255, 255, 0.95) !important;
+                backdrop-filter: blur(20px) !important;
+                -webkit-backdrop-filter: blur(20px) !important;
+            }
+            html.dark .nav-menu {
+                background: rgba(15, 23, 42, 0.95) !important;
+            }
+        }
+
         /* Desktop Nav Menu Capsule Spacing */
         @media (min-width: 901px) {
             .nav-menu {
